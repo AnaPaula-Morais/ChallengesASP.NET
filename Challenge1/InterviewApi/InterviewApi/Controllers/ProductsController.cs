@@ -15,7 +15,7 @@ namespace InterviewApi.Controllers
             new Product { Id = 3, Name = "Notebook", Price = 3.99m }
         };
 
-        [HttpGet(Name ="Products")]
+        [HttpGet]
         public IActionResult GetProducts()
         {
             return Ok(products);
